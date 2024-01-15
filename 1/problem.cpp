@@ -3,8 +3,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-using namespace std;
-
 class Triangle
 {
     int a, b, c;
