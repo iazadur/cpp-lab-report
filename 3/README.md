@@ -1,15 +1,9 @@
+This C++ code illustrates the use of a parameterized constructor and a destructor in a class named `class_name`. The class contains private data members `a` and `b`. The parameterized constructor is defined to initialize these members when an object is instantiated.
 
+In the `main` function:
 
-This C++ program defines a class named Triangle to calculate and print the area and perimeter of a triangle. The class has private member variables `a`, `b`, and `c` representing the sides of the triangle. 
+- An object `obj` of class `class_name` is created, and the parameterized constructor is invoked with values 5 and 6.
+- The constructor prints a message indicating its invocation and displays the values of `a` and `b`.
+- Upon exiting the `main` function, the destructor is automatically called, printing a message and displaying the values of `a` and `b` again.
 
-The public member functions include:
-- A constructor to initialize the sides
-- `perimeter()` to calculate and print the perimeter
-- `area()` to calculate and print the area
-
-In the `main()` function, an instance of the Triangle class is created with sides 3, 4, and 5. The `perimeter()` and `area()` functions are then called on this instance, displaying the calculated perimeter and area of the triangle.
-
-The output of the program, based on the provided sides, would be:
-
-Perimeter of triangle is: `12`  
-Area of triangle is: `6`
+This code demonstrates the use of constructors for initializing object states during instantiation and the destructor for cleanup when the object goes out of scope. In this case, the constructor initializes the values, and the destructor displays the values before the object is destroyed.

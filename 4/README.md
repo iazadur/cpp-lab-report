@@ -1,15 +1,11 @@
+This C++ code demonstrates Constructor Overloading, a concept where a class has multiple constructors with different parameter lists. In this example, there is a class named `construct` with two constructors:
 
+1. The default constructor (`construct()`) initializes the `area` variable to 0.
+2. The parameterized constructor (`construct(int a, int b)`) takes two integers as parameters and calculates the area by multiplying them.
 
-This C++ program defines a class named Triangle to calculate and print the area and perimeter of a triangle. The class has private member variables `a`, `b`, and `c` representing the sides of the triangle. 
+In the `main` function:
 
-The public member functions include:
-- A constructor to initialize the sides
-- `perimeter()` to calculate and print the perimeter
-- `area()` to calculate and print the area
+- An object `o` of class `construct` is created using the default constructor.
+- Another object `o2` is created using the parameterized constructor with values 10 and 20.
 
-In the `main()` function, an instance of the Triangle class is created with sides 3, 4, and 5. The `perimeter()` and `area()` functions are then called on this instance, displaying the calculated perimeter and area of the triangle.
-
-The output of the program, based on the provided sides, would be:
-
-Perimeter of triangle is: `12`  
-Area of triangle is: `6`
+Both objects are then displayed using the `disp()` member function, which prints the calculated area. The output demonstrates how constructor overloading allows objects to be created and initialized with different sets of values, providing flexibility in object instantiation based on varying requirements.
