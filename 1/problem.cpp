@@ -1,7 +1,7 @@
 // Write a program to print the area and perimeter of a triangle having sides of 3, 4 and 5 units by creating a class named 'Triangle' with a function to print the area and perimeter.
 
-#include <iostream>
-#include <math.h>
+#include <bits/stdc++.h>
+using namespace std;
 
 using namespace std;
 
