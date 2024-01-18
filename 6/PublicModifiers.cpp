@@ -1,59 +1,55 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-class A {
+class Vehicle {
 private:
-    int a=10;
+    int vehicleID;
 
 protected:
-    int b=20;
+    int maxSpeed;
 
 public:
-    int c=30;
+    int numWheels;
 
-    void display() {
-        cout << "A display(): " << a << " " << b << " " << c << endl;
+    void showInfo() {
+        cout << "Vehicle ID: " << vehicleID << endl;
+        cout << "Max Speed: " << maxSpeed << " km/h" << endl;
+        cout << "Number of Wheels: " << numWheels << endl;
     }
 };
 
-class B : private A {
+class Car : private Vehicle {
 public:
-
-
     void accessBaseMembers() {
-        display();
-        cout << "B accessing members: " << b << " " << c << endl;
+        showInfo();
+        cout << "Car accessing members: " << maxSpeed << " km/h" << endl;
     }
 };
 
-class C : protected A {
+class Motorcycle : protected Vehicle {
 public:
-
-
     void accessBaseMembers() {
-        display();
-        cout << "C accessing members: " << b << " " << c << endl;
+        showInfo();
+        cout << "Motorcycle accessing members: " << maxSpeed << " km/h" << endl;
     }
 };
 
-class D : public A {
+class Truck : public Vehicle {
 public:
-
-
     void accessBaseMembers() {
-        display();
-        cout << "D accessing members: " << b << " " << c << endl;
+        showInfo();
+        cout << "Truck accessing members: " << maxSpeed << " km/h" << endl;
     }
 };
 
 int main() {
-    B b;
-    C c;
-    D d;
+    Car myCar;
+    Motorcycle myMotorcycle;
+    Truck myTruck;
 
-    b.accessBaseMembers();
-    c.accessBaseMembers(); // Error: inaccessible due to protected inheritance
-    d.accessBaseMembers();
+    myCar.accessBaseMembers();
+    myMotorcycle.accessBaseMembers();
+    myTruck.accessBaseMembers();
 
     return 0;
 }
