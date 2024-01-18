@@ -1,14 +1,9 @@
-This C++ code demonstrates the concept of inheritance and access specifiers (private, protected, and public) in a hierarchy of classes. 
+This C++ code defines a basic inheritance structure with classes representing different types of vehicles. The `Vehicle` class serves as a base class, containing private, protected, and public members. The `Car`, `Motorcycle`, and `Truck` classes inherit from the `Vehicle` class with different access specifiers.
 
-1. Class `A` serves as the base class with private, protected, and public members.
-2. Class `B` is derived from `A` with private inheritance. It can access the members of `A` privately, and its member function `accessBaseMembers` demonstrates this access.
-3. Class `C` is derived from `A` with protected inheritance. It can access the members of `A` as protected, and its member function `accessBaseMembers` showcases this access.
-4. Class `D` is derived from `A` with public inheritance. It can access the members of `A` as public, and its member function `accessBaseMembers` demonstrates this access.
+- The `Car` class privately inherits from `Vehicle`, making all members of `Vehicle` private in `Car`. It has a member function `accessBaseMembers()` that calls the `showInfo()` function and accesses the `maxSpeed` member.
 
-In the `main` function, objects of classes `B`, `C`, and `D` are created, and their respective member functions are invoked:
+- The `Motorcycle` class protects its inheritance from `Vehicle`, making all members of `Vehicle` protected in `Motorcycle`. Similar to `Car`, it has a member function `accessBaseMembers()` that calls `showInfo()` and accesses the `maxSpeed` member.
 
-- `b.accessBaseMembers();`: Calls the member function of class `B`, demonstrating access to the private and protected members of `A`.
-- `c.accessBaseMembers();`: Results in a compilation error since `C` inherits privately from `A`, making the members inaccessible outside the class.
-- `d.accessBaseMembers();`: Calls the member function of class `D`, demonstrating access to the public members of `A`.
+- The `Truck` class publicly inherits from `Vehicle`, so all public and protected members of `Vehicle` remain accessible in `Truck`. It also has a member function `accessBaseMembers()` that calls `showInfo()` and accesses the `maxSpeed` member.
 
-This example illustrates how the choice of access specifiers in inheritance influences the visibility and accessibility of base class members in the derived classes.
+In the `main()` function, instances of `Car`, `Motorcycle`, and `Truck` are created, and their `accessBaseMembers()` functions are called to demonstrate the access levels in the inheritance hierarchy.

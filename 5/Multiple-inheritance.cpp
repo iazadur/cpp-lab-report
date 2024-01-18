@@ -1,25 +1,23 @@
-// C++ program to explain
-// multiple inheritance
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 // first base class
-class Vehicle {
+class Animal {
 public:
-	Vehicle() { cout << "This is a Vehicle\n"; }
+	Animal() { cout << "This is an Animal\n"; }
 };
 
 // second base class
-class FourWheeler {
+class Mammal {
 public:
-	FourWheeler()
+	Mammal()
 	{
-		cout << "This is a 4 wheeler Vehicle\n";
+		cout << "This is a Mammal\n";
 	}
 };
 
 // sub class derived from two base classes
-class Car : public Vehicle, public FourWheeler {
+class Dog : public Animal, public Mammal {
 };
 
 // main function
@@ -27,6 +25,6 @@ int main()
 {
 	// Creating object of sub class will
 	// invoke the constructor of base classes.
-	Car obj;
+	Dog myDog;
 	return 0;
 }

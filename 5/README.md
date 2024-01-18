@@ -1,28 +1,14 @@
 ## Hierarchical Inheritance
-The provided C++ code illustrates the concept of Hierarchical Inheritance, a form of inheritance in which multiple derived classes inherit from a single base class. In this example, there is a base class called `Vehicle`. Two derived classes, `Car` and `Bus`, inherit from the `Vehicle` class.
-
-The `Vehicle` class has a constructor that prints the message "This is a Vehicle" when an object of the class is instantiated. Both `Car` and `Bus` are derived classes, meaning they inherit the properties and behaviors of the `Vehicle` class.
-
-In the `main` function, two objects are created: `obj1` of type `Car` and `obj2` of type `Bus`. When these objects are instantiated, the constructor of the base class (`Vehicle`) is invoked, resulting in the message "This is a Vehicle" being printed for each object.
-
-This example demonstrates the hierarchical relationship between the base class and its derived classes, showcasing how common functionalities can be inherited and shared among multiple subclasses in a hierarchy.
+This C++ code defines a simple inheritance structure involving a base class `Animal` and two derived classes, `Dog` and `Cat`. The base class has a default constructor that outputs a message indicating it is an animal. Both the `Dog` and `Cat` classes publicly inherit from the `Animal` base class. In the `main()` function, objects of both the `Dog` and `Cat` classes are created, triggering the invocation of the base class constructor due to the inheritance relationship. The output demonstrates the sequential construction of objects, with each object creation triggering the display of the "This is an Animal" message from the base class constructor.
 
 
 ## Multilevel Inheritance
-The provided C++ code exemplifies Multilevel Inheritance, a type of inheritance where a derived class serves as the base class for another class. In this example, there is a base class named `Vehicle`. A first-level derived class, `fourWheeler`, inherits from the `Vehicle` class. Finally, a second-level derived class, `Car`, inherits from the `fourWheeler` class.
+This C++ code defines a hierarchy of classes involving a base class `Animal` and two derived classes, `Mammal` and `Dog`. The base class has a constructor that outputs "This is an Animal." The `Mammal` class is derived from the `Animal` class and has its constructor that outputs "Mammals are animals." The `Dog` class, in turn, is derived from the `Mammal` class and has its constructor that outputs "Dog is a mammal."
 
-The `Vehicle` class has a constructor that prints the message "This is a Vehicle" when an object of the class is instantiated. The `fourWheeler` class, derived from `Vehicle`, has its own constructor which adds the message "Objects with 4 wheels are vehicles."
-
-The `Car` class, derived from `fourWheeler`, also has its own constructor that outputs "Car has 4 Wheels." In the `main` function, an object `obj` of type `Car` is created. When this object is instantiated, the constructors of the base classes (`Vehicle` and `fourWheeler`) are invoked in sequence, resulting in the respective messages being printed.
-
-This example illustrates the multilevel inheritance relationship, where each derived class inherits properties and behaviors from its immediate base class, creating a hierarchical structure.
+In the `main()` function, an object of the `Dog` class is created, which triggers the constructors of all the base classes (`Animal` and `Mammal`) due to the inheritance hierarchy. The output demonstrates the sequential execution of constructors, showcasing the relationship between the classes in the hierarchy.
 
 ##  Multiple Inheritance
 
-The given C++ code demonstrates the concept of Multiple Inheritance, where a derived class inherits from more than one base class. In this example, there are two base classes: `Vehicle` and `FourWheeler`. The `Vehicle` class has a constructor that prints "This is a Vehicle," and the `FourWheeler` class has a constructor that prints "This is a 4 wheeler Vehicle."
+This C++ code defines a multiple inheritance scenario with two base classes, `Animal` and `Mammal`, and a derived class `Dog` that inherits from both base classes. The `Animal` class has a constructor outputting "This is an Animal," and the `Mammal` class has a constructor outputting "This is a Mammal."
 
-The derived class, `Car`, is created by inheriting from both the `Vehicle` and `FourWheeler` classes. Consequently, the `Car` class inherits the characteristics of both base classes.
-
-In the `main` function, an object `obj` of type `Car` is instantiated. During the object creation, the constructors of both base classes (`Vehicle` and `FourWheeler`) are invoked, resulting in the respective messages being printed.
-
-This example illustrates the ability of a derived class to inherit attributes and behaviors from multiple base classes, showcasing the flexibility and expressiveness of multiple inheritance in C++.
+In the `main()` function, an object of the `Dog` class is created. This triggers the constructors of both base classes (`Animal` and `Mammal`) due to the multiple inheritance relationship. The output demonstrates the initialization sequence of constructors for each base class in the derived class, illustrating the use of multiple inheritance in C++.

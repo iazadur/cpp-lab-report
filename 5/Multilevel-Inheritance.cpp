@@ -1,27 +1,25 @@
-// C++ program to implement
-// Multilevel Inheritance
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-
 // base class
-class Vehicle {
+class Animal {
 public:
-	Vehicle() { cout << "This is a Vehicle\n"; }
+	Animal() { cout << "This is an Animal\n"; }
 };
 
-// first sub_class derived from class vehicle
-class fourWheeler : public Vehicle {
+// first sub_class derived from class Animal
+class Mammal : public Animal {
 public:
-	fourWheeler()
+	Mammal()
 	{
-		cout << "Objects with 4 wheels are vehicles\n";
+		cout << "Mammals are animals\n";
 	}
 };
-// sub class derived from the derived base class fourWheeler
-class Car : public fourWheeler {
+
+// sub class derived from the derived base class Mammal
+class Dog : public Mammal {
 public:
-	Car() { cout << "Car has 4 Wheels\n"; }
+	Dog() { cout << "Dog is a mammal\n"; }
 };
 
 // main function
@@ -29,7 +27,6 @@ int main()
 {
 	// Creating object of sub class will
 	// invoke the constructor of base classes.
-	Car obj;
+	Dog myDog;
 	return 0;
 }
-
