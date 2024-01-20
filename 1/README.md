@@ -11,5 +11,10 @@ In the `main()` function, an instance of the Triangle class is created with side
 
 The output of the program, based on the provided sides, would be:
 
-Perimeter of triangle is: `12`  
-Area of triangle is: `6`
+
+## Output
+
+```
+Perimeter of triangle is: 12
+Area of triangle is: 6
+```

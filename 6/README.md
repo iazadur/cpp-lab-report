@@ -7,3 +7,21 @@ This C++ code defines a basic inheritance structure with classes representing di
 - The `Truck` class publicly inherits from `Vehicle`, so all public and protected members of `Vehicle` remain accessible in `Truck`. It also has a member function `accessBaseMembers()` that calls `showInfo()` and accesses the `maxSpeed` member.
 
 In the `main()` function, instances of `Car`, `Motorcycle`, and `Truck` are created, and their `accessBaseMembers()` functions are called to demonstrate the access levels in the inheritance hierarchy.
+
+
+
+## Output
+```
+Vehicle ID: 18222624
+Max Speed: 0 km/h
+Number of Wheels: 4055040
+Car accessing members: 0 km/h
+Vehicle ID: 6422356
+Max Speed: 4201019 km/h
+Number of Wheels: 4200928
+Motorcycle accessing members: 4201019 km/h
+Vehicle ID: 6422280
+Max Speed: 1968669293 km/h
+Number of Wheels: 4200928
+Truck accessing members: 1968669293 km/h
+```

@@ -10,3 +10,11 @@ In the `main` function:
 - The `displayId` function is called to display the protected member.
 
 This example showcases how a derived class can inherit members from the base class and extend its functionality, including accessing protected members. It also demonstrates encapsulation by using private members in the base class that are indirectly accessed through public or protected functions in the derived class.
+
+## Output
+
+```
+Radius is: 1.5
+Area is: 7.065
+id_protected is: 81
+```

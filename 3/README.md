@@ -7,3 +7,15 @@ In the `main` function:
 - Upon exiting the `main` function, the destructor is automatically called, printing a message and displaying the values of `a` and `b` again.
 
 This code demonstrates the use of constructors for initializing object states during instantiation and the destructor for cleanup when the object goes out of scope. In this case, the constructor initializes the values, and the destructor displays the values before the object is destroyed.
+
+## Output
+
+```
+Constructor is called
+Value of a: 5
+Value of b: 6
+
+Destructor is called
+Value of a: 5
+Value of b: 6
+```

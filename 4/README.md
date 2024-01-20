@@ -9,3 +9,10 @@ In the `main` function:
 - Another object `o2` is created using the parameterized constructor with values 10 and 20.
 
 Both objects are then displayed using the `disp()` member function, which prints the calculated area. The output demonstrates how constructor overloading allows objects to be created and initialized with different sets of values, providing flexibility in object instantiation based on varying requirements.
+
+## Output
+
+```
+0
+200
+```

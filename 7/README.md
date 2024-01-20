@@ -12,6 +12,12 @@ In the `main` function, an object of the `Calculator` class, `myCalculator`, is 
 
 The output of the program prints the results of the addition operations, demonstrating how the compiler resolves which overloaded function to call based on the provided arguments.
 
+## Output
+```
+Sum of 5 and 10: 15
+Sum of 5, 10, and 15: 30
+Sum of 3.5 and 2.7: 6.2
+```
 
 ##  Polymorphism through Function overriding
 
@@ -28,3 +34,9 @@ The key observation is in the function calls:
 2. `bptr->show();`: This calls the non-virtual function `show()`. The function to be called is determined at compile-time based on the type of the pointer, not the type of the object. In this case, it calls the `show()` function of the `base` class.
 
 The program output showcases the difference between virtual and non-virtual functions, emphasizing how virtual functions enable dynamic binding at runtime, providing flexibility in handling derived class implementations.
+
+## Output
+```
+print derived class
+show base class
+```
