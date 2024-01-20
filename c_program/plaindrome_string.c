@@ -1,4 +1,4 @@
-// write a palindrome string program in c
+
 #include<stdio.h>
 #include<string.h>
 int main()
